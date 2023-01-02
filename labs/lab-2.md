@@ -1,0 +1,192 @@
+### Lab 2 : Run Container For Java Application 
+
+---
+
+1. Build & Run Java application without using Docker
+2. Build & Run Java application using Docker
+3. Make changes Persistent
+4. Push changes to Docker Hub
+5. Rerun the container with new image(Persistent Changes)
+6. Remove everything
+
+---
+
+#### 1. Build & Run Java application without using Docker(Optional)
+
+> This part 1 require installed Java version 18.
+
+- Clone the Java Application and Change the directory
+
+```
+git clone https://gist.github.com/akshayithape-devops/8e8128917a1754595cd155266d8f3aac.git
+cd 8e8128917a1754595cd155266d8f3aac
+```
+
+- Now build java application with `javac` command.
+
+```
+javac helloworld.java
+```
+
+- Now run java application with `java` command.
+
+```
+java HelloWorld
+```
+
+#### 2. Build & Run Java application using Docker
+
+> Note : I already build one custom image for our meetup - akshayithape02/docker101-demo:latest
+
+- Run the Java container 
+
+```
+docker run --name javacontainer akshayithape02/docker101-demo:latest
+```
+
+- Remove javacontainer 
+
+```
+docker rm javacontainer
+```
+
+- Run the Java container in Interactive mode
+
+```
+docker run -it --name javacontainer akshayithape02/docker101-demo:latest /bin/bash
+```
+
+- Run existing java application binary
+
+``` 
+java HelloWorld
+```
+
+> VIM editor is not installed. So we have to install it.
+
+- Install VIM editor
+
+```
+microdnf install vim
+```
+
+- Now we have update Java Application Code
+
+```
+vim helloworld.java
+
+# Add following line in `System.out.println`
+
+---
+Welcome To Docker #101 - Hands-On Lab 2
+---
+
+# To save and exit 
+
+:wq
+```
+
+- Now we have build new Java application Code
+
+```
+javac helloworld.java
+```
+
+- Run Java Application 
+
+```
+java HelloWorld
+```
+
+- Now exit the container
+
+```
+exit
+```
+
+#### 3. Make changes Persistent
+
+- Commit the changes
+
+```
+docker commit --change='CMD ["java", "HelloWorld"]' javacontainer helloworld:v2
+```
+
+- Check the docker images
+
+```
+docker images
+```
+
+- Remove the container
+
+```
+docker rm javacontainer
+```
+
+- Run the container with new image 
+
+```
+docker run --name helloworldcontainer helloworld:v2
+```
+
+- Remove the container
+
+```
+docker rm helloworldcontainer
+```
+
+#### 4. Push changes to Docker Hub
+
+- Docker login 
+
+```
+# Format
+docker login -u username -p password/token
+```
+
+- Tag the docker image
+
+```
+docker tag helloworld:v2 akshayithape02/docker101-demo:v2
+```
+
+- List the docker image
+
+```
+docker images
+```
+
+- Push image to DockerHub
+
+```
+docker push akshayithape02/docker101-demo:v2
+```
+
+- Vist the docker hub and verify that your image is pushed or not
+
+```
+Browse https://hub.docker.com/
+```
+
+#### 5. Rerun the container with new image(Persistent Changes)
+
+- Run the container with new image 
+
+```
+docker run --name helloworldcontainer akshayithape02/docker101-demo:v2
+```
+
+#### 6. Remove everything
+
+- Clean up the containers
+```
+docker system prune
+```
+
+- Clean up the images
+```
+docker rmi -f $(docker images)
+```
+
+---
