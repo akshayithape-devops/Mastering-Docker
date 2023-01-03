@@ -36,38 +36,37 @@ java HelloWorld
 
 #### 2. Build & Run Java application using Docker
 
-> Note : I already build one custom image for our meetup - akshayithape02/docker101-demo:latest
-
-- Run the Java container 
-
-```
-docker run --name javacontainer akshayithape02/docker101-demo:latest
-```
-
-- Remove javacontainer 
-
-```
-docker rm javacontainer
-```
-
 - Run the Java container in Interactive mode
 
 ```
-docker run -it --name javacontainer akshayithape02/docker101-demo:latest /bin/bash
+docker run -it --name javacontainer openjdk:18.0.2-jdk /bin/bash
 ```
 
-- Run existing java application binary
+> GIT & VIM editor is not installed. So we have to install it.
 
-``` 
-java HelloWorld
-```
-
-> VIM editor is not installed. So we have to install it.
-
-- Install VIM editor
+- Install GIT & VIM editor
 
 ```
-microdnf install vim
+microdnf install git vim
+```
+
+- Clone the Java Application and Change the directory
+
+```
+git clone https://gist.github.com/akshayithape-devops/8e8128917a1754595cd155266d8f3aac.git
+cd 8e8128917a1754595cd155266d8f3aac
+```
+
+- Now build java application with `javac` command.
+
+```
+javac helloworld.java
+```
+
+- Now run java application with `java` command.
+
+```
+java helloworld.java
 ```
 
 - Now we have update Java Application Code
@@ -98,6 +97,12 @@ javac helloworld.java
 java HelloWorld
 ```
 
+- We have move java binary to "/" directory
+
+```
+mv HelloWorld /
+```
+
 - Now exit the container
 
 ```
@@ -109,7 +114,7 @@ exit
 - Commit the changes
 
 ```
-docker commit --change='CMD ["java", "HelloWorld"]' javacontainer helloworld:v2
+docker commit --change='CMD ["java", "HelloWorld"]' javacontainer helloworld:v1
 ```
 
 - Check the docker images
@@ -127,7 +132,7 @@ docker rm javacontainer
 - Run the container with new image 
 
 ```
-docker run --name helloworldcontainer helloworld:v2
+docker run --name helloworldcontainer helloworld:v1
 ```
 
 - Remove the container
@@ -148,7 +153,7 @@ docker login -u username -p password/token
 - Tag the docker image
 
 ```
-docker tag helloworld:v2 akshayithape02/docker101-demo:v2
+docker tag helloworld:v1 akshayithape02/docker101-demo:v1
 ```
 
 - List the docker image
@@ -160,7 +165,7 @@ docker images
 - Push image to DockerHub
 
 ```
-docker push akshayithape02/docker101-demo:v2
+docker push akshayithape02/docker101-demo:v1
 ```
 
 - Vist the docker hub and verify that your image is pushed or not
@@ -174,7 +179,7 @@ Browse https://hub.docker.com/
 - Run the container with new image 
 
 ```
-docker run --name helloworldcontainer akshayithape02/docker101-demo:v2
+docker run --name helloworldcontainer akshayithape02/docker101-demo:v1
 ```
 
 #### 6. Remove everything
