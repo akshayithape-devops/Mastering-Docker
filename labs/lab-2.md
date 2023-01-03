@@ -15,6 +15,16 @@
 
 > This part 1 require installed Java version 18.
 
+- First we have to update play with docker virtual server. 
+```
+apk update
+```
+
+- We have to install java 
+```
+apk add openjdk11
+```
+
 - Clone the Java Application and Change the directory
 
 ```
