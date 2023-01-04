@@ -1,3 +1,15 @@
+### Docker Command Format 
+
+- Old Format 
+```
+docker <command> options
+```
+
+- New Format 
+```
+docker <management-command> <sub-command> options
+```
+
 ### Lab 1 : Run your first container
 
 1. Check the docker version
