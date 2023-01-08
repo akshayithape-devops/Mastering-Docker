@@ -110,7 +110,7 @@ java HelloWorld
 - We have move java binary to "/" directory
 
 ```
-mv HelloWorld /
+mv HelloWorld.class /
 ```
 
 - Now exit the container

@@ -85,6 +85,11 @@ curl http://localhost:8081
 docker ps
 ```
 
+- To check the container logs
+```
+docker logs containerA
+```
+
 #### 3. Run multiple containers
 
 - Search for `hello-world` docker image
