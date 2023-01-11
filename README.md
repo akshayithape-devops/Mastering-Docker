@@ -3,7 +3,7 @@ Let's mastering the docker concepts.
 
 ## Installation :
 
-- [Installation of Docker Enginee on Ubuntu](./installation/ubuntu.md)
+- [Installation of Docker Enginee on Ubuntu](https://gist.github.com/akshayithape-devops/f7ca100ce6edf170a522816f93bac6f8)
 
 ## Meetups :
 
