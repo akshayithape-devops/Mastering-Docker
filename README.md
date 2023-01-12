@@ -3,8 +3,17 @@ Let's mastering the docker concepts.
 
 ## Installation :
 
-- [Installation of Docker Enginee on Ubuntu - Document](https://gist.github.com/akshayithape-devops/f7ca100ce6edf170a522816f93bac6f8)
-- [Installation of Docker Enginee on Ubuntu - Video](https://www.youtube.com/watch?v=lqFvoEBHSIQ&t=5s)
+- Ubuntu :
+    - [Installation of Docker Engine on Ubuntu - Document](https://gist.github.com/akshayithape-devops/f7ca100ce6edf170a522816f93bac6f8)
+    - [Installation of Docker Engine on Ubuntu - Video](https://www.youtube.com/watch?v=lqFvoEBHSIQ&t=5s)
+
+- Windows 10 & 11 :
+    - [Installation of Docker Desktop on Windows 10 & 11 - Document](https://docs.docker.com/desktop/install/windows-install/)
+    - [Installation of Docker Desktop on Windows 10 & 11 - Video](https://www.youtube.com/watch?v=AneS8ulQeKE)
+
+- MacOS :
+    - [Installation of Docker Desktop on MacOS - Document](https://docs.docker.com/desktop/install/mac-install/)
+    - [Installation of Docker Desktop on MacOS - Video](https://www.youtube.com/watch?v=SGmFGYCuJK4)
 
 ## Meetups :
 
