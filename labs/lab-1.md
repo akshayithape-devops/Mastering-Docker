@@ -12,14 +12,14 @@ docker <management-command> <sub-command> options
 
 ### Lab 1 : Run your first container
 
-1. Check the docker version
+1. Get docker information
 2. Run a container
 3. Run multiple containers
 4. Remove the containers
 
 ---
 
-#### 1. Check the docker version
+#### 1. Get docker information
 
 - Check version of docker
 ```
