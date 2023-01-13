@@ -21,16 +21,12 @@ Let's mastering the docker concepts.
 
 ## Meetups :
 
-- Meetup #1 (14/01/2023) - `Docker #101: Getting Started` at [Securly Software, Pune](https://www.securly.com/)
+- Meetup #1 (26/12/2022) - `Docker 101` at [RedHat, Pune](https://www.redhat.com/en)
 
-    - [My Talk : Docker #101: Getting Started - Slide](./slides/)
-    - Hands-On Labs
-        - [Lab #1](./labs/lab-1.md)
-        - [Lab #2](./labs/lab-2.md)
-        - [Challenge](./labs/challenge-1.md)
-    - [Meetup - Photos](./photos/14-01-2022/)
+    - [My Talk : Docker Image Security Best Practices - Slide](./slides/Docker_Image_Security_Best_Practices.pdf)
+    - [Meetup - Photos](./photos/26-12-2022/RedHat-Tech-Meetup2.jpg)
 
-- Meetup #1 (14/01/2023) - `Docker #101: Getting Started` at [Securly Software, Pune](https://www.securly.com/)
+- Meetup #2 (14/01/2023) - `Docker #101: Getting Started` at [Securly Software, Pune](https://www.securly.com/)
 
     - [My Talk : Docker #101: Getting Started - Slide](./slides/)
     - Hands-On Labs
