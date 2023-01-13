@@ -40,7 +40,7 @@ docker help
 
 - Run the nginx container for demo 
 ```
-docker run -d -p 8080:80 --name demo-container nginx
+docker run -d -p 8080:80 --name demo-container nginx:alpine
 ```
 
 - Test the webserver is deployed in a container or not 
@@ -62,7 +62,7 @@ docker search httpd
 
 - Pull Apache HTTPD docker image
 ```
-docker pull httpd:latest
+docker pull httpd:alpine
 ```
 
 - Verify that Apache HTTPD docker image is pulled successfully or not
@@ -146,7 +146,7 @@ docker ps -a
 
 - Remove all docker images 
 ```
-docker rmi nginx:latest httpd:latest hello-world:latest 
+docker rmi nginx:alpine httpd:alpine hello-world:latest 
 
 OR 
 
