@@ -72,7 +72,7 @@ docker images
 
 - Run first container called `containerA`
 ```
-docker run -d -p 8081:80 --name containerA httpd:latest
+docker run -d -p 8081:80 --name containerA httpd:alpine
 ```
 
 - Test the webserver is deployed in a container or not 
