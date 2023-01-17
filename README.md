@@ -28,7 +28,7 @@ Let's mastering the docker concepts.
 
 - Meetup #2 (14/01/2023) - `Docker #101: Getting Started` at [Securly Software, Pune](https://www.securly.com/)
 
-    - [My Talk : Docker #101: Getting Started - Slide](./slides/)
+    - [My Talk : Docker #101: Getting Started - Slide](./slides/Docker_101_Getting_Started.pdf)
     - Hands-On Labs
         - [Lab #1](./labs/lab-1.md)
         - [Lab #2](./labs/lab-2.md)
