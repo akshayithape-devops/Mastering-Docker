@@ -33,7 +33,7 @@ Let's mastering the docker concepts.
         - [Lab #1](./labs/lab-1.md)
         - [Lab #2](./labs/lab-2.md)
         - [Challenge](./labs/challenge-1.md)
-    - [Meetup - Photos](./photos/14-01-2022/)
+    - [Meetup - Photos](./photos/14-01-2023/)
 
 ## Cheat Sheet :
 
