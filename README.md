@@ -32,7 +32,7 @@ Let's mastering the docker concepts.
     - Hands-On Labs
         - [Lab #1](./labs/lab-1.md)
         - [Lab #2](./labs/lab-2.md)
-        - [Challenge](./labs/challenge-1.md)
+        - [Challenges](./labs/challenges.md)
     - [Meetup - Photos](./photos/14-01-2023/)
 
 ## Cheat Sheet :
