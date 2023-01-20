@@ -32,7 +32,7 @@ Let's mastering the docker concepts.
     - Hands-On Labs
         - [Lab #1](./labs/lab-1.md)
         - [Lab #2](./labs/lab-2.md)
-        - [Challenge](./labs/challenge-1.md)
+        - [Challenge](./labs/challenges.md)
     - [Meetup - Photos](./photos/14-01-2023/)
 
 - College Workshop #1 (20/01/2023) - `DevOps & Docker` at [MIT-ADT University, Pune](https://mituniversity.ac.in/)
