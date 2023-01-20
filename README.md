@@ -35,6 +35,15 @@ Let's mastering the docker concepts.
         - [Challenge](./labs/challenge-1.md)
     - [Meetup - Photos](./photos/14-01-2023/)
 
+- College Workshop #1 (20/01/2023) - `DevOps & Docker` at [MIT-ADT University, Pune](https://mituniversity.ac.in/)
+
+    - [My Talk : DevOps & Docker](./slides/DevOps_&_Docker.pdf)
+    - Hands-On Labs
+        - [Lab #1](./labs/lab-1.md)
+        - [Lab #2](./labs/lab-2.md)
+        - [Challenges](./labs/challenges.md)
+    - [Meetup - Photos](./photos/20-01-2023/)
+
 ## Cheat Sheet :
 
 - [Docker CLI Cheat Sheet By Docker](./cheatsheets/docker_cheatsheet_1.pdf)
