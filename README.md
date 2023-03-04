@@ -44,6 +44,16 @@ Let's mastering the docker concepts.
         - [Challenges](./labs/challenges.md)
     - [Meetup - Photos](./photos/20-01-2023/)
 
+- Meetup #3 (18/02/2023) - `Part II : Docker Deep Dive` at [Securly Software, Pune](https://www.securly.com/)
+
+    - [My Talk : Part II : Docker Deep Dive - Slide](./slides/)
+    - Hands-On Labs
+        - [Lab #3](./labs/lab-3.md)
+        - [Lab #4](./labs/lab-4.md)
+        - [Lab #5](./labs/lab-5.md)
+        - [Challenges](./labs/)
+    - [Meetup - Photos](./photos/14-01-2023/)
+
 ## Cheat Sheet :
 
 - [Docker CLI Cheat Sheet By Docker](./cheatsheets/docker_cheatsheet_1.pdf)
