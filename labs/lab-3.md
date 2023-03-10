@@ -21,11 +21,13 @@
 # comment
 INSTRUCTION arguments
 OR 
-COMMAND argumentss
+COMMAND arguments
 
 # Example
 RUN echo 'hello'
 ```
+
+---
 
 #### FROM Instruction
 
@@ -64,6 +66,8 @@ docker build -f from -t akshayithape02/from:v1 .
 docker run akshayithape02/from:v1 
 ```
 
+---
+
 #### RUN Instruction
 
 * It will execute any commands in a new layer on top of the current image and commit the results. The resulting committed image will be used for the next step in the Dockerfile.
@@ -92,6 +96,8 @@ docker build -f run -t akshayithape02/run:v1 .
 
 docker run akshayithape02/run:v1 
 ```
+
+---
 
 #### CMD Instruction
 
@@ -123,6 +129,8 @@ docker build -f cmd -t akshayithape02/cmd:v1 .
 docker run akshayithape02/cmd:v1 
 ```
 
+---
+
 #### LABEL Instruction
 
 * The LABEL instruction adds metadata to an image. A LABEL is a key-value pair.
@@ -150,6 +158,8 @@ docker build -f label -t akshayithape02/label:v1 .
 
 docker run akshayithape02/label:v1 
 ```
+
+---
 
 #### EXPOSE Instruction
 
@@ -180,6 +190,8 @@ docker build -f expose -t akshayithape02/expose:v1 .
 docker run akshayithape02/expose:v1 
 ```
 
+---
+
 #### ENV Instruction
 
 * The ENV instruction sets the environment variable  to the value . This value will be in the environment for all subsequent instructions in the build stage.
@@ -209,6 +221,8 @@ docker build -f env -t akshayithape02/env:v1 .
 
 docker run akshayithape02/env:v1 
 ```
+
+---
 
 #### ADD & COPY Instruction
 
@@ -246,6 +260,8 @@ docker build -f addcopy -t akshayithape02/addcopy:v1 .
 docker run akshayithape02/addcopy:v1 
 ```
 
+---
+
 #### USER Instruction
 
 * The USER instruction sets the user name (or UID) and optionally the user group (or GID) to use as the default user and group for the remainder of the current stage. 
@@ -277,6 +293,8 @@ docker build -f user -t akshayithape02/user:v1 .
 docker run akshayithape02/user:v1 
 ```
 
+---
+
 #### ENTRYPOINT Instruction
 
 * An ENTRYPOINT allows you to configure a container that will run as an executable.
@@ -305,6 +323,8 @@ docker build -f entrypoint -t akshayithape02/entrypoint:v1 .
 
 docker run akshayithape02/entrypoint:v1 
 ```
+
+---
 
 #### WORKDIR Instruction
 
