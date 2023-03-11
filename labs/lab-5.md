@@ -145,7 +145,7 @@ docker network ls
 
 docker run -d --network host --name containerA tomcat:latest
 
-curl localhost
+curl localhost:8080
 
 docker stop containerA
 
@@ -161,7 +161,7 @@ Execute the following commands:
 ```
 docker network ls
 
-docker run -d --network node --name containerA tomcat:latest
+docker run -d --network none --name containerA tomcat:latest
 
 docker exec -it containerA /bin/bash
 
