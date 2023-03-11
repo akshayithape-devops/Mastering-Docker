@@ -65,6 +65,10 @@ docker inspect containerB
 
 docker exec -it containerA /bin/bash
 
+apt-get update
+
+apt-get install iputils-ping
+
 ping <IP_ADDRESS_CONTAINER_B>
 
 ping www.google.com
@@ -74,6 +78,10 @@ ping containerB
 exit
 
 docker exec -it containerB /bin/bash
+
+apt-get update
+
+apt-get install iputils-ping
 
 ping <IP_ADDRESS_CONTAINER_A>
 
@@ -157,9 +165,7 @@ docker run -d --network node --name containerA tomcat:latest
 
 docker exec -it containerA /bin/bash
 
-ping google.com
-
-exit
+docker inspect containerA
 
 docker stop containerA
 
