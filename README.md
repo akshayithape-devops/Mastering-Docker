@@ -46,7 +46,7 @@ Let's mastering the docker concepts.
 
 - Meetup #3 (11/03/2023) - `Part II : Docker Deep Dive` at [Securly Software, Pune](https://www.securly.com/)
 
-    - [My Talk : Part II : Docker Deep Dive - Slide](./slides/)
+    - [My Talk : Part II : Docker Deep Dive - Slide](./slides/Part_II_Docker_Deep_Dive.pdf)
     - Hands-On Labs
         - [Lab #3](./labs/lab-3.md)
         - [Lab #4](./labs/lab-4.md)
