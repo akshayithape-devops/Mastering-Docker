@@ -46,6 +46,12 @@ docker build -f volume -t akshayithape02/volume:v1 .
 
 docker run -it akshayithape02/volume:v1
 
+ls 
+
+cat test
+
+exit
+
 docker volume ls
 
 cd /var/lib/docker/volumes
