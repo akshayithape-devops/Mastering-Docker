@@ -51,6 +51,13 @@ FROM [--platform=<platform>] <image>[@<digest>] [AS <name>]
 
 * Hands-on Lab :
 
+Create directory for labs
+
+```
+mkdir docker-labs
+cd docker-labs
+```
+
 Create a file with name `from` and paste the following content into it:
 
 ```
@@ -63,7 +70,8 @@ Execute following commands:
 ```
 docker build -f from -t akshayithape02/from:v1 .
 
-docker run akshayithape02/from:v1 
+docker run -it akshayithape02/from:v1 /bin/bash
+exit
 ```
 
 ---
@@ -187,7 +195,7 @@ Execute following commands:
 ```
 docker build -f expose -t akshayithape02/expose:v1 .
 
-docker run akshayithape02/expose:v1 
+docker run -d akshayithape02/expose:v1 
 ```
 
 ---
@@ -241,6 +249,15 @@ COPY [--chown=<user>:<group>] ["<src>",... "<dest>"]
 
 * Hands-on Lab :
 
+Create two files 
+
+```
+mkdir copy add 
+echo "test_copy" > ./copy/test_copy
+echo "test_add" > ./add/test_add
+wget https://dl.google.com/go/go1.11.4.linux-amd64.tar.gz
+```
+
 Create a file with name `addcopy` and paste the following content into it:
 
 ```
@@ -248,8 +265,10 @@ ARG CODE_VERSION=latest
 FROM ubuntu:${CODE_VERSION}
 COPY ./copy/test_copy /
 ADD ./add/test_add /
-ADD https://golang.org/doc/install?download=go1.11.4.linux-amd64.tar.gz /
-CMD cat test_copy && cat test_add && ls
+RUN mkdir /go-code-offline
+ADD go1.11.4.linux-amd64.tar.gz /go-code-offline
+ADD https://dl.google.com/go/go1.11.4.linux-amd64.tar.gz /
+CMD cat test_copy && cat test_add && ls && cd /go-code-offline && ls
 ```
 
 Execute following commands:
@@ -281,8 +300,9 @@ Create a file with name `user` and paste the following content into it:
 ```
 ARG CODE_VERSION=latest
 FROM ubuntu:${CODE_VERSION}
-RUN groupadd -r user && useradd -r -g user user
-USER user
+RUN groupadd -r akshay && useradd -r -g akshay akshay
+USER akshay
+CMD whoami
 ```
 
 Execute following commands:
