@@ -40,6 +40,10 @@ docker run --network my-net-1 -p 8080:80 -d  --name containerA httpd:latest
 docker inspect containerA
 
 docker network inspect my-net-1
+
+docker stop containerA
+
+docker rm containerA
 ```
 
 ---
@@ -49,9 +53,9 @@ docker network inspect my-net-1
 Execute the following commands:
 
 ```
-docker run --name containerA -d -p 8080:80 httpd:latest
+docker run --name containerA -d -p 8080:8080 tomcat:latest
 
-docker run --name containerB -d -p 8081:80 httpd:latest
+docker run --name containerB -d -p 8081:8080 tomcat:latest
 
 docker inspect containerA
 
@@ -131,7 +135,7 @@ Execute the following commands:
 ```
 docker network ls
 
-docker run -d --network host --name containerA httpd:latest
+docker run -d --network host --name containerA tomcat:latest
 
 curl localhost
 
@@ -140,6 +144,8 @@ docker stop containerA
 docker rm containerA
 ```
 
+---
+
 #### Connecting None Network with container
 
 Execute the following commands:
@@ -147,7 +153,7 @@ Execute the following commands:
 ```
 docker network ls
 
-docker run -d --network node --name containerA httpd:latest
+docker run -d --network node --name containerA tomcat:latest
 
 docker exec -it containerA /bin/bash
 
