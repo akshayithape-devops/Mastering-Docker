@@ -52,7 +52,7 @@ Let's mastering the docker concepts.
         - [Lab #4](./labs/lab-4.md)
         - [Lab #5](./labs/lab-5.md)
         - [Challenges](./labs/)
-    - [Meetup - Photos](./photos/11-03-2023/)
+    - [Meetup - Photos](./photos/11-03-2023/Part2-Docker-Deep-Dive.gif)
 
 ## Cheat Sheet :
 
