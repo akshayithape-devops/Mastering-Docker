@@ -56,7 +56,7 @@ Let's mastering the docker concepts.
 
 ## YouTube Live :
 
-- Session #1 (07/05/2023) - `Mastering Docker - Session I` 
+- Session #1 (14/05/2023) - `Mastering Docker - Session I` 
 
     - [My Talk : Mastering Docker Session I - Slide](./slides/Mastering_Docker_Session_I.pdf)
     - Hands-On Labs
@@ -65,7 +65,7 @@ Let's mastering the docker concepts.
         - [Lab #3](./yt-labs/lab-3.md)
         - [Lab #4](./yt-labs/lab-4.md)
         - [Challenges](./yt-labs/session-1-challenges.md)
-    - [Screenshot](./photos/07-05-2023/)
+    - [Screenshot](./photos/14-05-2023/)
 
 
 ## Cheat Sheet :
