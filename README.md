@@ -54,6 +54,20 @@ Let's mastering the docker concepts.
         - [Challenges](./labs/)
     - [Meetup - Photos](./photos/11-03-2023/Part2-Docker-Deep-Dive.gif)
 
+## YouTube Live :
+
+- Session #1 (07/05/2023) - `Mastering Docker - Session I` 
+
+    - [My Talk : Mastering Docker Session I - Slide](./slides/Mastering_Docker_Session_I.pdf)
+    - Hands-On Labs
+        - [Lab #1](./yt-labs/lab-1.md)
+        - [Lab #2](./yt-labs/lab-2.md)
+        - [Lab #3](./yt-labs/lab-3.md)
+        - [Lab #4](./yt-labs/lab-4.md)
+        - [Challenges](./yt-labs/session-1-challenges.md)
+    - [Screenshot](./photos/07-05-2023/)
+
+
 ## Cheat Sheet :
 
 - [Docker CLI Cheat Sheet By Docker](./cheatsheets/docker_cheatsheet_1.pdf)
