@@ -57,7 +57,7 @@ docker pull hello-world:latest
 docker images
 ```
 
-- Run second container called `containerB`
+- Run first container called `containerA`
 ```
 docker run --name containerA hello-world:latest
 ```
