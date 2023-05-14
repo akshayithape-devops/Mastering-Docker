@@ -2,49 +2,15 @@
 
 ---
 
-1. Build & Run Java application without using Docker
-2. Build & Run Java application using Docker
-3. Make changes Persistent
-4. Push changes to Docker Hub
-5. Rerun the container with new image(Persistent Changes)
-6. Remove everything
+1. Build & Run Java application using Docker
+2. Make changes Persistent
+3. Push changes to Docker Hub
+4. Rerun the container with new image(Persistent Changes)
+5. Remove everything
 
 ---
 
-#### 1. Build & Run Java application without using Docker(Optional)
-
-> This part 1 require installed Java version 18.
-
-- First we have to update play with docker virtual server. 
-```
-apk update
-```
-
-- We have to install java 
-```
-apk add openjdk11
-```
-
-- Clone the Java Application and Change the directory
-
-```
-git clone https://gist.github.com/akshayithape-devops/8e8128917a1754595cd155266d8f3aac.git
-cd 8e8128917a1754595cd155266d8f3aac
-```
-
-- Now build java application with `javac` command.
-
-```
-javac helloworld.java
-```
-
-- Now run java application with `java` command.
-
-```
-java HelloWorld
-```
-
-#### 2. Build & Run Java application using Docker
+#### 1. Build & Run Java application using Docker
 
 - Run the Java container in Interactive mode
 
@@ -119,7 +85,7 @@ mv HelloWorld.class /
 exit
 ```
 
-#### 3. Make changes Persistent
+#### 2. Make changes Persistent
 
 - Commit the changes
 
@@ -151,7 +117,7 @@ docker run --name helloworldcontainer helloworld:v1
 docker rm helloworldcontainer
 ```
 
-#### 4. Push changes to Docker Hub
+#### 3. Push changes to Docker Hub
 
 - Docker login 
 
@@ -184,7 +150,7 @@ docker push akshayithape02/docker101-demo:v1
 Browse https://hub.docker.com/
 ```
 
-#### 5. Rerun the container with new image(Persistent Changes)
+#### 4. Rerun the container with new image(Persistent Changes)
 
 - Run the container with new image 
 
@@ -192,7 +158,7 @@ Browse https://hub.docker.com/
 docker run --name helloworldcontainer akshayithape02/docker101-demo:v1
 ```
 
-#### 6. Remove everything
+#### 5. Remove everything
 
 - Clean up the containers
 ```
